@@ -138,3 +138,13 @@ end
 numbers_two = [1, 2, 3, 4, 5]
 
 puts double(numbers_two)
+
+# Exercise 13
+def multiply(num1, num2)
+  num1 * num2
+end
+
+a = 5
+b = 6
+
+puts multiply(a, b)
