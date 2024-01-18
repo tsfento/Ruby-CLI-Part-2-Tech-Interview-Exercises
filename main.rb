@@ -84,3 +84,22 @@ def find_longest_word(longest_array)
 end
 
 puts find_longest_word(words)
+
+# Exercise 10
+def high(symbol_hash)
+  check_value = 0
+  symbol_hash.each do |key, value|
+    if value > check_value
+      check_value = value
+    end
+  end
+  symbol_hash.key(check_value)
+end
+
+high_scores = {
+  :bronze => 10,
+  :silver => 20,
+  :gold => 30
+}
+
+puts high(high_scores)
