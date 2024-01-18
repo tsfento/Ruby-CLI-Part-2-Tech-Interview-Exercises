@@ -103,3 +103,27 @@ high_scores = {
 }
 
 puts high(high_scores)
+
+# Exercise 11
+hash = {
+  :a => {
+    :b => 30
+  },
+  :c => {
+    :d => 40
+  },
+  :e => {
+    :f => {
+      :g => 50
+    }
+  }
+}
+
+hash.each_value do |value|
+  return_value = nil
+  value.each_value do |nested_value|
+    if nested_value == 30
+      puts nested_value
+    end
+  end
+end
