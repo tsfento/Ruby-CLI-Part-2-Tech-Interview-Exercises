@@ -61,7 +61,7 @@ def length_finder(str_array)
   length_array
 end
 
-words = %w[hello what is up dude]
+words = ["hello", "what", "is", "up", "dude"]
 
 puts length_finder(words)
 
@@ -71,3 +71,16 @@ def reverse(string_to_reverse)
 end
 
 puts reverse('hello world')
+
+# Exercise 9
+def find_longest_word(longest_array)
+  longest = ''
+  longest_array.each do |word|
+    if word.size > longest.size
+      longest = word
+    end
+  end
+  longest
+end
+
+puts find_longest_word(words)
