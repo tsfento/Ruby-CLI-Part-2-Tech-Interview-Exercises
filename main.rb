@@ -21,3 +21,4 @@ people_hash.each_value do |person|
 end
 
 # Exercise 3
+"Hello world".each_char {|char| puts char}
