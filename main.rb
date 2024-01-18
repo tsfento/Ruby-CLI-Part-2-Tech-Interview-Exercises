@@ -53,3 +53,14 @@ def average(avg_array)
 end
 
 puts average(numbers)
+
+# Exercise 7
+def length_finder(str_array)
+  length_array = []
+  str_array.each { |string| length_array << string.size }
+  length_array
+end
+
+words = %w[hello what is up dude]
+
+puts length_finder(words)
