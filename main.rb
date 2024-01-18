@@ -37,3 +37,12 @@ while i <= 100
   end
   i += 1
 end
+
+# Exercise 5
+def sum(num_array)
+  num_array.sum
+end
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+puts sum(numbers)
