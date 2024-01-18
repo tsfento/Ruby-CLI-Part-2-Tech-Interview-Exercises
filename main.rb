@@ -11,9 +11,9 @@ end
 
 # Exercise 2
 people_hash = {
-  person1: {first_name: 'Giles', last_name: 'Meredith', age: 39},
-  person2: {first_name: 'Cora', last_name: 'Dalton', age: 20},
-  person3: {first_name: 'Aleta', last_name: 'Jarrett', age: 36}
+  person1: { first_name: 'Giles', last_name: 'Meredith', age: 39 },
+  person2: { first_name: 'Cora', last_name: 'Dalton', age: 20 },
+  person3: { first_name: 'Aleta', last_name: 'Jarrett', age: 36 }
 }
 
 people_hash.each_value do |person|
@@ -21,7 +21,7 @@ people_hash.each_value do |person|
 end
 
 # Exercise 3
-"Hello world".each_char {|char| puts char}
+'Hello world'.each_char { |char| puts char }
 
 # Exercise 4
 i = 1
@@ -39,10 +39,17 @@ while i <= 100
 end
 
 # Exercise 5
-def sum(num_array)
-  num_array.sum
+def sum(sum_array)
+  sum_array.sum
 end
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 puts sum(numbers)
+
+# Exercise 6
+def average(avg_array)
+  avg_array.sum.to_f / avg_array.length
+end
+
+puts average(numbers)
