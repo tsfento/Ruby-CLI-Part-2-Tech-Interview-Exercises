@@ -148,3 +148,14 @@ a = 5
 b = 6
 
 puts multiply(a, b)
+
+# Exercise 14
+def divisible_by_three(input_array)
+  divisible_array = []
+  input_array.each {|num| divisible_array << num if num % 3 == 0}
+  divisible_array
+end
+
+numbers_three = [9, 3, 1, 8, 6, 15, 12]
+
+puts divisible_by_three(numbers_three)
