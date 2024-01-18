@@ -127,3 +127,14 @@ hash.each_value do |value|
     end
   end
 end
+
+# Exercise 12
+def double(input_array)
+  double_array = []
+  input_array.each {|num| double_array << num *= 2}
+  double_array
+end
+
+numbers_two = [1, 2, 3, 4, 5]
+
+puts double(numbers_two)
