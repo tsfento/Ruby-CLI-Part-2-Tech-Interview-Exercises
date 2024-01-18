@@ -64,3 +64,10 @@ end
 words = %w[hello what is up dude]
 
 puts length_finder(words)
+
+# Exercise 8
+def reverse(string_to_reverse)
+  string_to_reverse.reverse
+end
+
+puts reverse('hello world')
