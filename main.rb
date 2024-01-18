@@ -159,3 +159,13 @@ end
 numbers_three = [9, 3, 1, 8, 6, 15, 12]
 
 puts divisible_by_three(numbers_three)
+
+# Exercise 15
+def join_arrays(array1, array2)
+  array1.concat(array2)
+end
+
+arr_a = [1, 2, 3]
+arr_b = [4, 5, 6]
+
+puts join_arrays(arr_a, arr_b)
